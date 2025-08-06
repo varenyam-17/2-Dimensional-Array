@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c;
+    cout<<"Enter number of Rows:"<<endl;
+    cin>>r;
+    cout<<"Enter number of Columns:"<<endl;
+    cin>>c;
+    
+    int m[r][c];
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<"Enter the Element "<<"["<<i<<"]"<<"["<<j<<"]"<<":"<<endl;
+            cin>>m[i][j];
+        }
+    }
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<" "<<m[i][j];
+            
+            
+        }
+        cout<<" "<<endl;
+    }
+}
