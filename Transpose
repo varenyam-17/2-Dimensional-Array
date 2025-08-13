@@ -1,0 +1,79 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c;
+    cout<<"Enter number of Rows:"<<endl;
+    cin>>r;
+    cout<<"Enter number of Columns:"<<endl;
+    cin>>c;
+    
+    int m[r][c];
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<"Enter the Element "<<"["<<i+1<<"]"<<"["<<j+1<<"]"<<":"<<endl;
+            cin>>m[i][j];
+        }
+    }
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<" "<<m[i][j];
+            
+            
+        }
+        cout<<" "<<endl;
+    }
+    int mi[r][c];
+     for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            mi[i][j]=m[j][i];
+        }
+    }
+    cout<<"Transpose:"<<endl;
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cout<<" "<<mi[i][j];
+            
+            
+        }
+        cout<<" "<<endl;
+}
+}
+OUTPUT:
+Enter number of Rows:
+3
+Enter number of Columns:
+3
+Enter the Element [1][1]:
+1
+Enter the Element [1][2]:
+2
+Enter the Element [1][3]:
+3
+Enter the Element [2][1]:
+4
+Enter the Element [2][2]:
+5
+Enter the Element [2][3]:
+6
+Enter the Element [3][1]:
+7
+Enter the Element [3][2]:
+8
+Enter the Element [3][3]:
+9
+ 1 2 3 
+ 4 5 6 
+ 7 8 9 
+Transpose:
+ 1 4 7 
+ 2 5 8 
+ 3 6 9 
